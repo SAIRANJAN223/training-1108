@@ -1,0 +1,26 @@
+###
+GET http://localhost:4004/odata/v4/student-ser/Student
+
+###
+POST http://localhost:4004/odata/v4/student-ser/Student
+Content-Type: application/json 
+
+
+{
+    "student_id":"7001",
+    "student_name":"Vidhyapathi"
+}
+
+
+###
+PATCH http://localhost:4004/odata/v4/student-ser/Student(student_id='7001')
+Content-Type: application/json 
+
+
+{
+     "student_name":"Sotta"
+}
+
+
+###
+DELETE http://localhost:4004/odata/v4/student-ser/Student(student_id='7001')
