@@ -1,8 +1,9 @@
 namespace summa;
 
 entity Student{
-    key student_id : String;
+    key student_id : String(10);
         student_name : String(256);
+        parent_id : String(10);
 }
 
 entity Teacher{

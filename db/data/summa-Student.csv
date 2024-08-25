@@ -1,4 +1,4 @@
-student_id;student_name
-10001;Sai
-10002;Velu
-10003;Cristo
+student_id;student_name;parent_id
+10001;Sai;10001
+10002;Velu;10002
+10003;Cristo;10003

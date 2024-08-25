@@ -2,14 +2,26 @@
 GET http://localhost:4004/odata/v4/student-ser/Student
 
 ###
-POST http://localhost:4004/odata/v4/student-ser/Student
+POST http://localhost:4005/odata/v4/student-ser/Student
 Content-Type: application/json 
 
 
 {
     "student_id":"7001",
-    "student_name":"Vidhyapathi"
+    "student_name":"Vidhyapathi",
+    "parent_id":"10001"
 }
+
+
+###
+PUT  http://localhost:4004/odata/v4/student-ser/Student(student_id='7001')
+Content-Type: application/json 
+
+
+{
+    "student_name":"Sotta"
+}
+
 
 
 ###
@@ -24,3 +36,18 @@ Content-Type: application/json
 
 ###
 DELETE http://localhost:4004/odata/v4/student-ser/Student(student_id='7001')
+
+
+
+
+
+###
+POST http://localhost:4004/odata/v4/toll-service/TE
+Content-Type: application/json 
+
+
+{
+    "entry_id": "7002",
+    "account_id": "10003"
+    
+}
